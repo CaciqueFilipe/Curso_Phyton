@@ -1,0 +1,11 @@
+# Ambientes Virtuais (Nunca enviar para o Git)
+.venv/
+venv/
+env/
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+
+# Pastas de IDEs
+.vscode/

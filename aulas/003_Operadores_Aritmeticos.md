@@ -42,7 +42,7 @@ Ex:
 5**2 == 25
 19//2 == 9
 19/2 == 9.5
-365**522 == #(numero gigante aqui, isso faz o phyton util para grandes calculos)
+365**522 == #(numero gigante aqui, isso faz o python util para grandes calculos)
 18%2 == 0
 122%3 == 2
 4**3 == 64

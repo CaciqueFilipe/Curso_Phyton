@@ -1,4 +1,4 @@
-# Crie um script phyton que mostre "Olá, Mundo!" na tela.
+# Crie um script python que mostre "Olá, Mundo!" na tela.
 
 print("Olá, Mundo!")
 

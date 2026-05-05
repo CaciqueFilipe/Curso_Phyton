@@ -1,4 +1,4 @@
-# Crie um script Phyton que leia algo pelo teclado e mostre na tela seu tipo primitivo e todas as informações possiveis sobre ele.
+# Crie um script Python que leia algo pelo teclado e mostre na tela seu tipo primitivo e todas as informações possiveis sobre ele.
 
 key = input("Digite algo:")
 print("O tipo primitivo desse valor é:", type(key))

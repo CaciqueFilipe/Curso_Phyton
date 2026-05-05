@@ -4,11 +4,11 @@
 
 - Criado em 1989 por Guido;
 - Comandos fáceis de entender;
-- Seu nome veio pelo nome de um programa de humor chamado *"Monty Phyton's Flying Circus"*
+- Seu nome veio pelo nome de um programa de humor chamado *"Monty Python's Flying Circus"*
 
-### Trocado pelo nome de Phyton 
+### Trocado pelo nome de Python 
 
-- Seu simbolo trocou para a serpente phyton por popularidade
+- Seu simbolo trocou para a serpente python por popularidade
 
 ### 1995
 
@@ -17,14 +17,14 @@
 
 ### 2001
 
-- Criada a comunidade Phyton Software Fundation
+- Criada a comunidade Python Software Fundation
 - Usada por grandes empresas como Microsoft e Google
 
 > Hoje já vem instalado em quase todos os Sistemas Operacionais
 
-- Linguagem RaspberryPi tem base o phyton
+- Linguagem RaspberryPi tem base o python
 
-### Phyton é
+### Python é
 
 - Linguagem de propósito geral (roda em qualquer lugar);
 - Fácil e intuitiva;
@@ -36,4 +36,4 @@
 
 ### Instalação
 
-- Procurar por phyton.org e fazer o download
+- Procurar por python.org e fazer o download
