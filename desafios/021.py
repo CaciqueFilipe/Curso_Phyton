@@ -13,3 +13,17 @@ if os.path.exists(arquivo):
     input('Reproduzindo áudio... Pressione ENTER para parar.')
 else:
     print(f'Erro: O arquivo "{arquivo}" não foi encontrado no diretório.')
+
+'''
+## Correção sugerida pelo Gustavo:
+
+import pygame
+
+print("\n{:=^20}".format(" Gustavo "))
+
+pygame.init()
+pygame.mixer.music.load('audio.mp3')
+pygame.mixer.music.play()
+pygame.event.wait()
+
+'''

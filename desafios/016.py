@@ -6,3 +6,10 @@ from math import trunc
 
 real = float(input("Digite um numero: "))
 print("O numero {} tem a parte inteira {}.".format(real, trunc(real)))
+
+## Outra opção sugerida pelo Gustavo:
+'''
+print("\n{:=^20}".format(" Gustavo "))
+num = float(input("Digite um valor:"))
+print("O valor digitado foi {} e a sua porção inteira é {}".format(num, int(num)))
+'''
