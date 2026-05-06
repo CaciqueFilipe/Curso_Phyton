@@ -15,3 +15,15 @@ if velocidade > 80:
     print("Sua multa é de R${:.2f}".format(multa).replace('.', ','))
 else:
     print("Velocidade abaixo do limite do radar, boa viagem!")
+
+'''
+## Outra opção sugerida pelo Gustavo:
+
+print("\n{:=^20}".format(" Gustavo "))
+velocidade = int(input("Qual a velocidade do veículo atual do carro?"))
+if velocidade > 80:
+    print("MULTADO! Você excedeu o limite permitido que é de 80km/h")
+    multa = (velocidade - 80) * 7
+    print('Vocẽ deve pagar uma multa de R${:.2f}'.format(multa).replace('.', ',')
+print("Tenha um bom dia! Dirija com segurança!")
+'''

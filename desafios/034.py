@@ -12,3 +12,16 @@ else:
     print("Se novo salario com aumento de 10% será {:.2f}".format(
         salario + (salario * 10 / 100)
     ))
+
+'''
+## Outra opção sugerida pelo Gustavo:
+
+print("\n{:=^20}".format(" Gustavo "))
+salario = float(input('Digite o salário do funcionario:'))
+
+if salario <= 1250:
+    novo = salario + (salario * 15 / 100)
+else:
+    novo = salario + (salario * 10 / 100)
+print("Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora.".format(salario, novo)))
+'''

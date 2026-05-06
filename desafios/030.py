@@ -9,3 +9,15 @@ if resto == 1:
     print("O numero {} é impar". format(n))
 else:
     print("O número {} é par". format(n))
+
+'''
+## Outra opção sugerida pelo Gustavo:
+
+print("\n{:=^20}".format(" Gustavo "))
+número = int(input("Me diga um número qualquer:"))
+resultado = número % 2
+if resultado == 0:
+    print("O número {} é PAR".format(número))
+else:
+    print("O número {} é ÍMPAR".format(número))
+'''
