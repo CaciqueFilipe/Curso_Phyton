@@ -16,9 +16,12 @@ print('{}EMPRESTIMO BANCÁRIO{}'.format(
     cores["limpa"]
 ))
 
-valor = float(input('Qual o valor do imóvel?'))
-salario = float(input('Qual o salário do comprador?'))
-anos = int(input('Quantos anos vai pagar?'))
+# valor = float(input('Qual o valor do imóvel?'))
+valor = float(input('Qual o valor do imóvel: R$ '))
+# salario = float(input('Qual o salário do comprador?'))
+salario = float(input('Qual o salário do comprador: R$ '))
+# anos = int(input('Quantos anos vai pagar?'))
+anos = int(input('Quantos anos de financimento? '))
 
 print('{}{:=^20}{}'.format(
     cores["amarelo"]["amareloNegrito"],
@@ -28,7 +31,16 @@ print('{}{:=^20}{}'.format(
 sleep(2)
 
 prestacao = valor / (anos * 12)
-margem = salario * 0.3
+# margem = salario * 0.3
+margem = salario * 30 /100 # Mais facil ler
+
+print('{}Pra pagar um casa de R$ {:.2f} em {} anos, a prestação será de R$ {:.2f}{}'.format(
+    cores["branco"]["brancoNegrito"],
+    valor,
+    anos,
+    prestacao,
+    cores["limpa"]
+))
 
 if prestacao > margem:
     print('Seu empréstimo foi {}NEGADO!{}'.format(

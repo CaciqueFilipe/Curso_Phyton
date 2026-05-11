@@ -35,10 +35,13 @@ opcao = int(input('Sua opção: '))
 
 # Lógica de conversão e exibição do resultado
 if opcao == 1:
-    print(f'{num} convertido para OCTAL é igual a {oct(num)[2:]}')
+    # print(f'{num} convertido para OCTAL é igual a {oct(num)[2:]}')
+    print('{} convertido para BINÁRIO é igual a {}'.format(num, bin(num)[2:]))
 elif opcao == 2:
-    print(f'{num} convertido para OCTAL é igual a {oct(num)[2:]}')
+    # print(f'{num} convertido para OCTAL é igual a {oct(num)[2:]}')
+    print('{} convertido para OCTAL é igual a {}'.format(num, oct(num)[2:]))
 elif opcao == 3:
-    print(f'{num} convertido para HEXADECIMAL é igual a {hex(num)[2:].upper()}')
+    # print(f'{num} convertido para HEXADECIMAL é igual a {hex(num)[2:].upper()}')
+    print('{} convertido para HEXADECIMAL é igual a {}'.format(num, hex(num)[2:]))
 else:
     print('Opção inválida. Tente novamente com 1, 2 ou 3.')
