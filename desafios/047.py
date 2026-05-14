@@ -1,6 +1,7 @@
 # Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
 
 print('Números pares entre 1 e 50:')
-for c in range(0, 50 +1, 2):
+for c in range(2, 51, 2):
     if c != 0:
         print('{}, '.format(c), end='')
+print('Acabou')
