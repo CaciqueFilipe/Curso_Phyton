@@ -5,28 +5,30 @@
 # Obs.: Considere que o caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1.
 
 
-print('=' * 20)
-print('BANCO CEV')
-print('=' * 20)
+print('=' * 30)
+print('{:^30}'.format('BANCO CEV'))
+print('=' * 30)
 
-tot50 = tot20 = tot10 = tot1 = 0
 valor = int(input('Que valor você quer sacar? R$ '))
+total = valor
+céd = 50
+totcéd = 0
 
 while True:
-    divisor = valor / 50
-
-
-    if valor == 0:
-        break
-
-if tot50 > 0:
-    print(f'Total de {tot50} cédulas de R$ 50')
-if tot20 > 0:
-    print(f'Total de {tot20} cédulas de R$ 20')
-if tot10 > 0:
-    print(f'Total de {tot10} cédulas de R$ 10')
-if tot1 > 0:
-    print(f'Total de {tot1} cédulas de R$ 1')
-
+    if total >= céd:
+        total -= céd
+        totcéd += 1
+    else:
+        if totcéd > 0:
+            print(f'Total de {totcéd} cédulas de R$ {céd}')
+        if céd == 50:
+            céd = 20
+        elif céd == 20:
+            céd = 10
+        elif céd == 10:
+            céd = 1
+        totcéd = 0
+        if total == 0:
+            break
 print('=' * 20)
 print('Volte sempre ao BANCO CEV! Tenha um bom dia!')

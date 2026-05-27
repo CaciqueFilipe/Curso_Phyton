@@ -10,18 +10,17 @@ print('=-' * 20)
 
 vitorias = 0
 while True:
-    nJogador = int(input('Diga um valor: '))
-    opcaoJogador = str(input('Par ou Ímpar? [P/I] ')).upper().strip()[0]
-    if opcaoJogador not in 'PpIi':
-        opcaoJogador = str(input('Opção inválida, tente Par ou Ímpar? [P/I] ')).upper().strip()[0]
-    nComp = randint(0, 100)
-    soma = nComp + nJogador
+    jogador = int(input('Diga um valor: '))
+    computador = randint(0, 10)
+    soma = computador + jogador
+    tipo = ' '
+    while tipo not in 'PI':
+        tipo = str(input('Par ou Ímpar? [P/I] ')).upper().strip()[0]
     resultado = 'PAR' if soma % 2 == 0 else 'IMPAR'
-
     print('=-' * 20)
-    print(f'Você jogou {nJogador} e o computador {nComp}. Total deu {soma} DEU {resultado}')
+    print(f'Você jogou {jogador} e o computador {computador}. Total deu {soma} DEU {resultado}')
     print('=-' * 20)
-    if resultado[0] == opcaoJogador:
+    if resultado[0] == tipo:
         print('Você Venceu!')
         vitorias += 1
     else:
@@ -30,12 +29,4 @@ while True:
     print('Vamos jogar novamente...')
     print('=-' * 20)
 print(f'GAME OVER! Você venceu {vitorias} vezes.')
-
-vitorias = 0
-
-# while True:
-#     nJogador = int(input('Diga um valor: '))
-#     opcaoJogador = str(input('Par ou Ímpar? [P/I] ')).upper().strip()[0]
-
-#     nComp = randint(0, 100)
 

@@ -14,25 +14,23 @@ while True:
     print('-' * 20)
 
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).strip().upper()[0]
-
-    while sexo not in 'MmFf':
+    sexo = ' '
+    while sexo not in 'MF':
         sexo = str(input('Sexo [M/F]: ')).strip().upper()[0]
 
-    if idade > 18:
+    if idade >= 18:
         maior18 += 1
-    if sexo in 'Mm':
+    if sexo == 'M':
         totHomem += 1
-    if sexo in 'Ff' and idade > 20:
+    if sexo == 'F' and idade < 20:
         totMulher20 += 1
 
     print('-' * 20)
-    continuar = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
-
-    while continuar not in 'SsNn':
+    continuar = ' '
+    while continuar not in 'SN':
         continuar = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
 
-    if continuar in 'Nn':
+    if continuar in 'N':
         break
 print('=' * 4, " FIM DO PROGRAMA ", '=' * 4)
 print(f'Total de pessoas com mais de 18 anos: {maior18}')

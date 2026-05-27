@@ -28,14 +28,14 @@ while True:
         prodMaisBarato = nome
         preçoBarato = preco
 
-    continuar = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
-
-    while continuar not in 'SsNn':
-        continuar = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer resp? [S/N]: ')).strip().upper()[0]
     
-    if continuar in 'Nn':
+    if resp == 'N':
         break
-print('=' * 4, " FIM DO PROGRAMA ", '=' * 4)
+# print('=' * 4, " FIM DO PROGRAMA ", '=' * 4)
+print('{:-^40}'.format('FIM DO PROGRAMA'))
 print(f'O total da compra foi: R$ {totCompra:.2f}')
 print(f'Temos {prodMais1000} produtos custando mais de R$ 1000.00')
 print(f'O produto mais barato foi {prodMaisBarato} que custa R$ {preçoBarato:.2f}')
