@@ -2,7 +2,7 @@
 
 **Em Python, existem 3 tipos de váriaveis compostas: tuplas, listas e dicionarios**
 
-## Listas
+## Listas - Parte 1
 
 - As listas diferentes das Tuplas, eu consigo modificar seu elementos.
 
