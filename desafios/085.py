@@ -4,7 +4,7 @@
 #pares 0 e impares 1
 valores = [[], []]
 
-for c in range(0,7):
+for c in range(1,8):
     num = int(input(f'Digite o {c}º valor: '))
     if num % 2 == 0:
         valores[0].append(num)
