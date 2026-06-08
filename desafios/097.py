@@ -19,3 +19,17 @@ def escreva(txt):
 escreva('Olá,Mundo!')
 escreva('Curso de Python no YouTube')
 escreva('CeV')
+
+'''
+# Gustavo - Outra forma
+def escreva(msg):
+    tam = len(msg) + 4
+    print('~' * tam)
+    print(f'  {msg}')
+    print('~' * tam)
+
+# Programa Principal
+escreva('Olá,Mundo!')
+escreva('Curso de Python no YouTube')
+escreva('CeV')
+'''

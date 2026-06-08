@@ -11,3 +11,17 @@ largura = float(input('LARGURA (m): '))
 comprimento = float(input('COMPRIMENTO (m): '))
 area = área(largura, comprimento)
 print(f'A área de um terreno {largura}x{comprimento} é de {area:5.1f}m²')
+
+'''
+# Gustavo - Outra forma
+def área(larg, comp):
+    a = larg * comp
+    print(f'A área de um terreno {larg}x{comp} é de {a}m²')
+
+
+print('Controle de Terrenos')
+print('-' * 20)
+l = float(input('LARGURA (m): '))
+c = float(input('COMPRIMENTO (m): '))
+área(l, c)
+'''
