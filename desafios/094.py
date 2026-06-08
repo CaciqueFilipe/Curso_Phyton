@@ -5,26 +5,36 @@
 # B) A média de idade do grupo
 # C) Uma lista com todas as mulheres
 # D) Uma lista com todas as pessoas com idade acima da média
+
 pessoas = []
 pessoa = {}
 totIdade = 0
 while True:
+    pessoa.clear()
     pessoa['nome'] = str(input('Nome: '))
-    pessoa['sexo'] = str(input('Sexo: [M/F]'))
+    while True: # Validação de entrada, campo sexo:
+        pessoa['sexo'] = str(input('Sexo: [M/F]')).upper()[0]
+        if pessoa['sexo'] in 'MF':
+            break
+        print('ERRO! Por favor, digite apenas M ou F.')
     pessoa['idade'] = int(input('Idade: '))
     totIdade += pessoa['idade']
     pessoas.append(pessoa.copy())
-    resp = str(input('Quer continuar? [S/N]')).upper()
-    if resp in 'N':
+    while True: # Validação de quer continuar:
+        resp = str(input('Quer continuar? [S/N]')).upper()[0]
+        if resp in 'SN':
+            break
+        print('ERRO! Por favor, digite apenas S ou N.')
+    if resp == 'N':
         break
 print('-=' * 30)
 qtd_pessoas = len(pessoas)
 media = totIdade / qtd_pessoas
 print(f'- O grupo tem {qtd_pessoas} pessoas.')
-print(f'- A média de idade é de {media:.2f} anos.')
+print(f'- A média de idade é de {media:5.2f} anos.')
 print('- As mulheres cadastradas foram: ', end='')
 for p in pessoas:
-    if p['sexo'] in 'Ff':
+    if p['sexo'] in 'F':
         print(f'{p['nome']}', end=' ')
 print()
 print('- Lista das pessoas acima da média:')

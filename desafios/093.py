@@ -6,15 +6,15 @@
 jogador = {}
 
 jogador['nome'] = str(input('Nome do jogador: '))
-qtd = int(input(f'Quantas partidas {jogador['nome']} jogou? '))
+qtd = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
 
-gols = []
+partidas = []
 tot = 0
 for p in range(0, qtd):
-    gol = int(input(f'Quantos gols na partida {p}? '))
-    gols.append(gol)
+    gol = int(input(f'    Quantos gols na partida {p}? '))
+    partidas.append(gol)
     tot += gol
-jogador['gols'] = gols
+jogador['gols'] = partidas[:]
 jogador['total'] = tot
 
 print('-=' * 30)

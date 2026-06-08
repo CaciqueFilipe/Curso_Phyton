@@ -3,7 +3,7 @@
 
 aluno = dict()
 aluno["Nome"] = str(input('Nome: '))
-aluno["Média"] = float(input('Média: '))
+aluno["Média"] = float(input(f'Média de {aluno["Nome"]}: '))
 
 if 7 > aluno["Média"] >= 5:
     aluno["Situação"] = "RECUPERAÇÃO"

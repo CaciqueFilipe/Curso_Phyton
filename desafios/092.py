@@ -3,23 +3,21 @@
 # Calcule e acrescente, além da idade, com quantos anos a pessoas vai se aposentar.
 # Considerar aposentadoria com 35 anos de colaboração
 
-from datetime import date
+from datetime import datetime
 
 pessoa = {}
 pessoa['nome'] = str(input('Nome: '))
 ano_nascimento = int(input('Ano de Nascimento: '))
-ano_atual = date.today().year
+ano_atual = datetime.now().year
 
 pessoa['idade'] = ano_atual - ano_nascimento
 pessoa['cpts'] = int(input('Carteira de Trabalho (0 não tem): '))
 if pessoa['cpts'] != 0:
     pessoa['contratacao'] = int(input('Ano de Contratação: '))
     pessoa['salário'] = float(input('Salário: R$ '))
-    tempo_servico = ano_atual - pessoa['contratacao']
-    if tempo_servico < 35:
-        pessoa['aposentadoria'] = pessoa['idade'] + (35 - tempo_servico)
+    pessoa['aposentadoria'] = pessoa['idade'] + ((pessoa['contratacao'] + 35) - ano_atual)
 
 print('-=' * 30)
-print(pessoa)
+# print(pessoa)
 for k,v in pessoa.items():
-    print(f'{k} tem o valor {v}')
+    print(f'  - {k} tem o valor {v}')
