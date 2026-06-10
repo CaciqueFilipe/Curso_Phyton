@@ -7,19 +7,18 @@ def voto(ano_nascimento: int):
         :param: int ano_nascimento
         :return: NEGADO, OPCIONAL ou OBRIGATÓRIO
     """
-    from datetime import date
+    from datetime import date # Importação escopo local
 
     idade = date.today().year - ano_nascimento
     print(f'Com {idade} anos: ', end='')
-    if idade < 18:
-        print('NÃO VOTA')
-    elif 18 <= idade < 65:
-        print('VOTO OBRIGATÓRIO')
+    if idade < 16:
+        return f'Com {idade} anos: NÃO VOTA.'
+    elif 16 <= idade < 18 or idade > 65:
+        return f'Com {idade} anos: VOTO OPCIONAL.'
     else:
-        print('VOTO OPCIONAL')
-    print()
+        return f'Com {idade} anos: VOTO OBRIGATÓRIO.'
 
 
 print('-' * 30)
 ano = int(input('Em que ano você nasceu? '))
-voto(ano)
+print(voto(ano))
