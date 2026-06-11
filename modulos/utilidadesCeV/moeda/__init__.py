@@ -1,28 +1,28 @@
-def aumentar(valor, porcentagem, formato=False):
+def aumentar(valor = 0, porcentagem = 0, formato=False):
     result = valor + (valor * porcentagem / 100)
     return result if formato is False else moeda(result)
 
 
-def diminuir(valor, porcentagem, formato=False):
+def diminuir(valor = 0, porcentagem = 0, formato=False):
     result = valor - (valor * porcentagem / 100)
     return result if formato is False else moeda(result)
 
 
-def dobro(valor, formato=False):
+def dobro(valor = 0, formato=False):
     result = valor * 2
     return result if formato is False else moeda(result)
 
 
-def metade(valor, formato=False):
+def metade(valor = 0, formato=False):
     result = valor / 2
     return result if formato is False else moeda(result)
 
 
-def moeda(valor):
-    return f'R$ {valor:.2f}'.replace('.', ',')
+def moeda(valor = 0, moeda = 'R$'):
+    return f'{moeda} {valor:>.2f}'.replace('.', ',')
 
 
-def resumo(valor, aumento, reducao):
+def resumo(valor = 0, aumento = 0, reducao = 0):
     print('-' * 30)
     print('RESUMO DO VALOR'.center(30))
     print('-' * 30)
